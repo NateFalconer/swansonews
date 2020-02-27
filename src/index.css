@@ -108,3 +108,7 @@ code {
   padding-bottom: 30px;
   width: 420px;
 }
+
+.navlink {
+  color: hsla(0,0%,100%,.5);
+}
