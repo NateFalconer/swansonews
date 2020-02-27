@@ -33,7 +33,7 @@ class App extends Component {
     //   });
     // });
     
-    axios.get(`http://ron-swanson-quotes.herokuapp.com/v2/quotes`).then(res => {
+    axios.get(`https://ron-swanson-quotes.herokuapp.com/v2/quotes`).then(res => {
         this.setState({
         randomQuote: res.data,
         ready: true
