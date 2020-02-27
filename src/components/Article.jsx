@@ -34,7 +34,7 @@ class Article extends Component {
             <NavBar />
             </div>
             <div className="articleText">
-                <h1>{this.state.title}</h1>
+                {/* <h1>{this.state.title}</h1> */}
                 <h2>{this.state.lede}</h2>
                 {this.state.text}
             </div>
