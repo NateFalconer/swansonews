@@ -1,0 +1,110 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/bg2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.homeBody {
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  width: 100%;
+}
+
+.stories {
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+.storyLinks {
+  border: 1px solid black;
+  margin: 10px;
+  /* text-align: justify; */
+  padding: 35px;
+  font-size: 1.2rem;
+  width: 30vw;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  /* mix-blend-mode: overlay; */
+  box-shadow: 0 5px 10px rgba(0,0,0,1);
+  background: rgba(0,0,0,.5);
+}
+
+.quote {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  justify-content: space-evenly;
+}
+
+.innerquote {
+  color: #fff;
+  width: 60%;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  /* mix-blend-mode: overlay; */
+  /* box-shadow: 0 5px 10px rgba(0,0,0,1); */
+  /* background: rgba(0,0,0,.5); */
+  text-transform: uppercase;
+  font-size: 2.7rem;
+}
+
+.ronleft {
+  width: 20vw;
+  height: 20vw;
+}
+
+.ronright {
+  width: 20vw;
+  height: 20vw;
+  transform: scaleX(-1);
+}
+
+.articleText {
+  color: #fff;
+  font-size: 1.7rem;
+  padding-left: 100px;
+  text-align: center;
+  padding-right: 100px;
+  padding-top: 80px;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(0,0,0,.7)
+}
+
+.aboot {
+  color: #fff;
+  font-size: 1.7rem;
+  padding-left: 100px;
+  text-align: center;
+  padding-right: 100px;
+  padding-top: 80px;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(0,0,0,.7)
+}
+
+.pyr {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dance {
+  padding-bottom: 30px;
+  width: 420px;
+}

@@ -1,0 +1,32 @@
+roadmap
+
+// connect to swanson api
+make components: homepage, story, navbar, ...
+// test to make sure i can reliably match stories to quotes
+get ron image and potential backgrounds
+get random quote, display at top of page with ron image and textbox
+make function to pull out relevant words from quote
+start manually matching up relevant words to headlines and categories
+make function to match with stories
+connect to more apis if necessary 
+css it up
+make another function to pull up another swanson quote based on the story text
+set up different story backgrounds based on the story category
+download episodes of parks and rec if necessary for backgrounds
+
+        axios.get(`https://content.guardianapis.com/search?q=(${searchTerms[0]}%20${searchTerms[1]}%20${searchTerms[3]}%20${searchTerms[4]})&api-key=f9d94560-e043-4ddc-ae02-fa498b85b806`).then(res => {
+        this.setState({
+            currentStory: res.data,
+            ready: true
+            })
+        })
+    }
+
+    showTheStories = () => {
+        return this.state.currentStory.map(eachStory => {
+            return (
+                <div className="row"> </div>
+                <div className="storyOne"> </div>
+            );
+        });
+    }
