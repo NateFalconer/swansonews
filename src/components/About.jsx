@@ -12,7 +12,7 @@ class About extends Component {
             <p>This project was developed by Nate Falconer.</p>
             <a href="https://github.com/jamesseanwright/ron-swanson-quotes" target="_blank">Ron Swanson Quotes API</a> <br />
             <a href="https://open-platform.theguardian.com/" target="_blank">The Guardian Open Platform</a> <br />
-            <a href="https://github.com/NateFalconer/react-api-project" target="_blank">GitHub</a>
+            <a href="https://github.com/NateFalconer/swansonews" target="_blank">GitHub</a>
             </div>
             <img className="pyr" alt="pyra" src="./assets/pyramid.png" /> <br />
             <img className="dance" alt="dancin" src="./assets/dancin.gif" />

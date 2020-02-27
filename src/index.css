@@ -67,10 +67,11 @@ code {
   height: 20vw;
 }
 
-.ronright {
+.bfast {
   width: 20vw;
   height: 20vw;
-  transform: scaleX(-1);
+  padding-right: 40px;
+  padding-top: 15px;
 }
 
 .articleText {
