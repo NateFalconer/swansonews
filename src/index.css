@@ -102,11 +102,13 @@ code {
 .pyr {
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 80%;
 }
 
 .dance {
   padding-bottom: 30px;
   width: 420px;
+  max-width: 80%;
 }
 
 .navlink {
