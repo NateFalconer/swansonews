@@ -111,4 +111,10 @@ code {
 
 .navlink {
   color: hsla(0,0%,100%,.5);
+  opacity: 1;
+}
+
+.navLinks {
+  color: hsla(0,0%,100%,.5);
+  opacity: 1;
 }
