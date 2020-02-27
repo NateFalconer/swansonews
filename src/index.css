@@ -72,6 +72,7 @@ code {
   height: 20vw;
   padding-right: 40px;
   padding-top: 15px;
+  transform: scaleX(-1);
 }
 
 .articleText {
