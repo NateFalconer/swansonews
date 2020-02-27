@@ -19,9 +19,8 @@ class Article extends Component {
                     let title = $('.content__headline').text();
                     let lede = $('.content__standfirst > p').text();
                     let pArray = []
-
-                    $('.content__article-body > p').each(function(){
-                        pArray.push(<p>{$(this).text()}</p>);
+                    $('.content__article-body > p').each(function(i, e){
+                        pArray.push(<p key={i}>{$(this).text()}</p>);
                     });
                     this.setState({title: title, lede: lede, text: pArray})
                 }
