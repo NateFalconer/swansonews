@@ -90,7 +90,8 @@ code {
 }
 
 .articlePic {
-  width: 100%;
+  width: 350px;
+  justify-content: center;
 }
 
 
