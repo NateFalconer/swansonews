@@ -35,7 +35,7 @@ class Article extends Component {
                 <NavBar />
                 </div>
                 <div className="articleContent">
-                    {<h1>{this.state.title}</h1>}
+                    {/* {<h1>{this.state.title}</h1>} */}
                     <br />
                     <h2>{this.state.lede}</h2>
                     <img className="articlePic" src={this.state.imgUrl} />
