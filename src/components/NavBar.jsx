@@ -10,7 +10,7 @@ class NavBar extends Component {
         <Navbar bg="primary" variant="dark" fixed="top">
           <Navbar.Brand href="/">Give me more Swansonews!</Navbar.Brand>
           <Nav className="navLinks">
-            <Link className="navlink" to="/about">What the hell is this?</Link>
+            <Link className="navlink" to="/about">About</Link>
             <a href="https://www.youtube.com/watch?v=dGuMByKwmYQ" target="_blank" className="ytlink">Best of Ron Swanson</a>
           </Nav>
         </Navbar>
