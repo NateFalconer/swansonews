@@ -6,9 +6,9 @@ import NavBar from './NavBar'
 class Article extends Component {
     state = {
         text: '',
-        title: '',
+        // title: '',
         lede: '',
-        imgUrl: '',
+        // imgUrl: '',
     }
     componentDidMount() {
         console.log(this.props)
@@ -38,8 +38,8 @@ class Article extends Component {
                 <div className="articleContent">
                     {/* {<h1>{this.state.title}</h1>} */}
                     <br />
-                    <h2>{this.state.lede}</h2>
-                    <img className="articlePic" src={this.state.imgUrl} />
+                    <h1>{this.state.lede}</h1>
+                    {/* <img className="articlePic" src={this.state.imgUrl} /> */}
                     <div className="articleText">
                         {this.state.text}
                     </div>
