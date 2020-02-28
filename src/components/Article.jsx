@@ -38,11 +38,9 @@ class Article extends Component {
                 {/* <h1>{this.state.title}</h1> */}
                 <h2>{this.state.lede}</h2>
                 <br />
-                <div className="apic">
+                {/* <div className="apic">
                 <img className="articlePic" src={this.state.imgUrl} />
-                </div>
-                <br />
-                <br />
+                </div> */}
                 {this.state.text}
             </div>
             </div>
