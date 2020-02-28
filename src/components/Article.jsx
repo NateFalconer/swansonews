@@ -35,6 +35,7 @@ class Article extends Component {
             <div className="articleText">
                 {/* <h1>{this.state.title}</h1> */}
                 <h2>{this.state.lede}</h2>
+                <br />
                 {this.state.text}
             </div>
             </div>
