@@ -89,6 +89,11 @@ code {
   background: rgba(0,0,0,.7)
 }
 
+.articlePic {
+  width: 100%;
+}
+
+
 .articleText h2 {
   text-align: center;
 }

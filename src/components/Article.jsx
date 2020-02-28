@@ -8,6 +8,7 @@ class Article extends Component {
         text:'',
         title:'',
         lede:'',
+        imgUrl:'',
     }
     componentDidMount() {
         console.log(this.props)
@@ -18,11 +19,12 @@ class Article extends Component {
                     const $ = cheerio.load(html);
                     let title = $('.content__headline').text();
                     let lede = $('.content__standfirst > p').text();
+                    let imgUrl = $('img.responsive-img')[0].attribs.src;
                     let pArray = []
                     $('.content__article-body > p').each(function(i, e){
                         pArray.push(<p key={i}>{$(this).text()}</p>);
                     });
-                    this.setState({title: title, lede: lede, text: pArray})
+                    this.setState({title: title, imgUrl: imgUrl, lede: lede, text: pArray})
                 }
             }, (error) => console.log(error));
     }
@@ -35,6 +37,11 @@ class Article extends Component {
             <div className="articleText">
                 {/* <h1>{this.state.title}</h1> */}
                 <h2>{this.state.lede}</h2>
+                <br />
+                <div className="apic">
+                <img className="articlePic" src={this.state.imgUrl} />
+                </div>
+                <br />
                 <br />
                 {this.state.text}
             </div>
