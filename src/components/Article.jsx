@@ -31,18 +31,18 @@ class Article extends Component {
     render() {
         return (
             <div>
-            <div className="nav">
-            <NavBar />
-            </div>
-            <div className="articleText">
-                {/* <h1>{this.state.title}</h1> */}
-                <h2>{this.state.lede}</h2>
-                <br />
-                <div className="apic">
-                <img className="articlePic" src={this.state.imgUrl} />
+                <div className="nav">
+                <NavBar />
                 </div>
-                {this.state.text}
-            </div>
+                <div className="articleContent">
+                    {<h1>{this.state.title}</h1>}
+                    <br />
+                    <h2>{this.state.lede}</h2>
+                    <img className="articlePic" src={this.state.imgUrl} />
+                    <div className="articleText">
+                        {this.state.text}
+                    </div>
+                </div>
             </div>
         );
     }

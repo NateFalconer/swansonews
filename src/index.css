@@ -75,28 +75,44 @@ code {
   padding-top: 15px;
 }
 
-.articleText {
+.articleContent{
+
   color: #fff;
-  font-size: 1.7rem;
-  padding-left: 80px;
-  text-align: left;
-  padding-right: 80px;
-  padding-bottom: 35px;
-  padding-top: 110px;
-  text-shadow: 0 5px 10px rgba(0,0,0,1);
+  padding: 10px;
+  padding-top: 60px;
   max-width: 1000px;
   margin: auto;
   background: rgba(0,0,0,.7)
 }
 
-.articlePic {
-  width: 350px;
-  justify-content: center;
+.articleContent h1{
+  padding-left: 60px;
+  padding-right: 60px;
+  text-transform: uppercase;
 }
 
+.articleContent h2{
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
-.articleText h2 {
-  text-align: center;
+.articleContent img{
+  width: 500px;
+}
+
+.articlePic {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.articleText {
+  font-size: 1.7rem;
+  padding-left: 70px;
+  text-align: left;
+  padding-right: 70px;
+  padding-bottom: 35px;
+  padding-top: 20px;
+  text-shadow: 0 5px 10px rgba(0,0,0,1);
 }
 
 .aboot {
