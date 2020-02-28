@@ -125,7 +125,7 @@ class HomePage extends Component {
                     <div className="innerquote">
                         <p>{this.showTheQuote()}</p>
                     </div>
-                    <img className="bfast" src="./assets/breakplate.png" />
+                    <img className="bfast" src="./assets/breakplate2.png" />
                 </div>
                 {console.log(this.state.searchTerms)}
                 {this.state.searchTerms && this.state.currentStory.length === 0 && this.filterTheQuote()}
