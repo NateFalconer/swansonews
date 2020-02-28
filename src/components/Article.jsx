@@ -4,11 +4,11 @@ import axios from 'axios'
 import NavBar from './NavBar'
 
 class Article extends Component {
-    state={
-        text:'',
-        title:'',
-        lede:'',
-        imgUrl:'',
+    state = {
+        text: '',
+        title: '',
+        lede: '',
+        imgUrl: '',
     }
     componentDidMount() {
         console.log(this.props)
@@ -17,14 +17,15 @@ class Article extends Component {
                 if (response.status === 200) {
                     const html = response.data;
                     const $ = cheerio.load(html);
-                    let title = $('.content__headline').text();
+                    // let title = $('.content__headline').text();
                     let lede = $('.content__standfirst > p').text();
-                    let imgUrl = $('img.responsive-img')[0].attribs.src;
+                    // let imgUrl = $('img.responsive-img')[0].attribs.src;
                     let pArray = []
-                    $('.content__article-body > p').each(function(i, e){
+                    $('.content__article-body > p').each(function (i, e) {
                         pArray.push(<p key={i}>{$(this).text()}</p>);
                     });
-                    this.setState({title: title, imgUrl: imgUrl, lede: lede, text: pArray})
+                    this.setState({ lede: lede, text: pArray })
+                    console.log(this.state.text)
                 }
             }, (error) => console.log(error));
     }
@@ -32,7 +33,7 @@ class Article extends Component {
         return (
             <div>
                 <div className="nav">
-                <NavBar />
+                    <NavBar />
                 </div>
                 <div className="articleContent">
                     {/* {<h1>{this.state.title}</h1>} */}
